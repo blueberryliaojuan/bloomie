@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --primary-color: #c02d26;
-  --secondary-color: #ecbdc9;
+  --primary-color: #d10f17;
+  --secondary-color: #f7d9d9;
   --accent-color: #f6e9e7;
+}
+
+ion-icon {
+  /* font-size: 64px; */
 }

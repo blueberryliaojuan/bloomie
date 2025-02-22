@@ -3,13 +3,10 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
-<<<<<<< HEAD
 // in ES modules __dirname is not defined
 // This is different from CommonJS modules, where __dirname is always available.
 // npm add -D @types/node then we can use __dirname
 
-=======
->>>>>>> 7fad753 (Initial commit)
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],

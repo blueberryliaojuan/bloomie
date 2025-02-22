@@ -20,7 +20,8 @@ Bloomie is a flower store offering both in-store and online shopping options.
 ### Dependencies:
 
 - CSS: [tailwindcss](https://tailwindcss.com/)
-- classname: [classnames](https://www.npmjs.com/package/classnames)
+<!-- - classname: [classnames](https://www.npmjs.com/package/classnames) -->
+- Icons：[ionicons](https://ionic.io/ionicons)
 - JSON Server: [typicode/json-server](https://github.com/typicode/json-server)
 
 ### Installation Steps:
@@ -31,3 +32,14 @@ Bloomie is a flower store offering both in-store and online shopping options.
    npm db
 3. Start the development server:
    npm run dev
+
+---
+
+## Challenges and what I Learned:
+
+1.  learned about the way to use ionIcons in the react, made some mistakes on how to import css, finally found that I can use them as components
+
+### like <IonIcon icon={heartOutline} className="text-lg" />
+
+2. the state management of react is very similar to Vue
+3.

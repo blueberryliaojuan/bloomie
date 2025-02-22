@@ -6,7 +6,15 @@ const home = () => {
   return (
     <div>
       <Header />
-      <Main></Main>
+      <div style={{ minHeight: "calc(100dvh - 200px" }}>
+        <h1
+          className="text-center  text-2xl  py-24"
+          style={{ color: "var(--primary-color)" }}
+        >
+          Please visit the shop page...
+        </h1>
+      </div>
+      {/*  */}
       <Footer></Footer>
     </div>
   );
