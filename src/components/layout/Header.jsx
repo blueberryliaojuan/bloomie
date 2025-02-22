@@ -21,7 +21,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header
-      className="  p-4 shadow-md flex items-center"
+      className="p-4 shadow-md flex items-center"
       style={{
         ...headerHeight,
         backgroundColor: "var(--primary-color)",
@@ -42,7 +42,8 @@ const Header = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav className="space-x-6 hidden md:flex">
+        {/* when screen is smaller than large（1024px）, it will be hidden  */}
+        <nav className="space-x-6 hidden lg:flex">
           <Link to="/" style={navColor} className="hover:text-gray-300">
             Home
           </Link>
@@ -64,7 +65,8 @@ const Header = () => {
         </nav>
 
         {/* Search bar */}
-        <div className="hidden md:block" style={searchBgColor}>
+        {/* when screen is smaller than large（1024px）, it will be hidden  */}
+        <div className="hidden lg:block" style={searchBgColor}>
           <input
             type="text"
             placeholder="Search..."
@@ -74,22 +76,26 @@ const Header = () => {
         </div>
 
         {/* Mobile Hamburger Menu */}
-        <div className="md:hidden">
+        {/* when screen is bigger than large（1024px）, it will be hidden  */}
+        <div className="lg:hidden">
           <button
             className="text-white focus:outline-none"
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+              console.log("Menu Open:", menuOpen);
+            }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="w-6 h-6"
+              stroke="#f7d9d9"
+              className="w-8 h-8"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth="2"
+                strokeWidth="3"
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
@@ -98,7 +104,14 @@ const Header = () => {
       </div>
 
       {/* Mobile Navigation Menu */}
-      <div className={`md:hidden ${menuOpen ? "block" : "hidden"}`}>
+      {/* <div className={`lg:hidden ${menuOpen ? "block" : "hidden"}`}> */}
+      <div
+        className={`lg:hidden ${
+          menuOpen ? "block" : "hidden"
+        } fixed top-0 right-0  bg-[var(--secondary-color)] transform ${
+          menuOpen ? "translate-x-0" : "-translate-x-full"
+        } transition-transform duration-300 ease-in-out z-40`}
+      >
         <nav
           className="space-y-4 px-4 py-2 "
           style={{ backgroundColor: "var(--secondary-color)" }}

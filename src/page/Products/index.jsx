@@ -90,7 +90,7 @@ const product = () => {
   ];
 
   const [flowers, setFlowers] = useState(initialFlowers); // Flowers state with favorite status // Manage favorites
-  //todo
+  //todo...
   const [cart, setCart] = useState([]); // Manage cart
 
   // Handle adding to favorites

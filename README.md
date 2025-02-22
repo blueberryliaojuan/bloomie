@@ -28,12 +28,10 @@ Bloomie is a flower store offering both in-store and online shopping options.
 
 ### Installation Steps:
 
-1. Install project dependencies:
-   npm i
-2. Set up the JSON Server:
-   npm db
-3. Start the development server:
-   npm run dev
+1. Install project dependencies: npm i
+<!-- 2. Set up the JSON Server:
+   npm db -->
+2. Start the development server: npm run dev
 
 ---
 
@@ -46,4 +44,4 @@ Bloomie is a flower store offering both in-store and online shopping options.
 2. I learned that the higher verion of react-router-dom uses RouterProvider, so I tried in this project
 3. learned about the way to use ionIcons in the react, I made some mistakes on how to import css, finally found that I can use them as components, like <IonIcon icon={heartOutline} className="text-lg" />
 4. the state management of react is very similar to Vue, so I got used to it quickly
-5. I used JSON server to store my data
+5. I tried to use JSON server to store my data, but run out of time, I will try in next assignment
