@@ -3,6 +3,8 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
+=======
+>>>>>>> 7fad753 (Initial commit)
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
