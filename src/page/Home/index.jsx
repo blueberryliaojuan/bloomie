@@ -11,7 +11,7 @@ const home = () => {
           className="text-center  text-2xl  py-24"
           style={{ color: "var(--primary-color)" }}
         >
-          On process.Please visit the shop page...
+          test of git submit. On process.Please visit the shop page...
         </h1>
       </div>
       {/*  */}

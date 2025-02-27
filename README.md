@@ -2,7 +2,7 @@
 
 **React + Vite Project**
 
-Bloomie is a flower store offering both in-store and online shopping options.
+Bloomie Bloomie Bloomie is a flower store offering both in-store and online shopping options.
 
 ---
 
