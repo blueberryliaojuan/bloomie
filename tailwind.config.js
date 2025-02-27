@@ -5,11 +5,9 @@ export default defineConfig({
   theme: {
     extend: {
       colors: {
-        colors: {
-          deepRed: "var(--primary-color)", // 使用 CSS 变量
-          secondary: "var(--secondary-color)",
-          accent: "var(--accent-color)",
-        },
+        deepRed: "var(--primary-color)", // 使用 CSS 变量
+        secondary: "var(--secondary-color)",
+        accent: "var(--accent-color)",
       },
       animation: {
         "fade-in": "fadeIn 1s ease-out forwards",
