@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Header from "@/components/layout/Header";
+import Header from "@/components/layout/Header"; // Header component for the page
 import Footer from "@/components/layout/Footer";
 import FlowerItem from "@/components/common/FlowerItem";
 import "./index.css";
-import img1 from "@/assets/img/flowerBouquet01.jpeg";
+import img1 from "@/assets/img/flowerBouquet01.jpeg"; //image items for the product
 import img2 from "@/assets/img/flowerBouquet02.jpeg";
 import img3 from "@/assets/img/flowerBouquet03.jpeg";
 import img4 from "@/assets/img/flowerBouquet04.jpeg";

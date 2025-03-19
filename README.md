@@ -49,4 +49,4 @@ Bloomie Bloomie Bloomie is a flower store offering both in-store and online shop
 
 1. So far, I have built four pages for this project: Home, Shop, About, and 404. Through this process, I had the opportunity to deepen my understanding of key React hooks and concepts, including useState, useEffect, useRef, and useNavigate.
 2. The project was tested on both Chrome and Firefox, and I observed a discrepancy in how screen height was rendered between the two browsers. Specifically, while the Apple and Google buttons displayed correctly in Chrome, the last line of text was partially clipped in Firefox. This issue stemmed from differences in how line-height was calculated. To address this, I explicitly set the line-height and adjusted the padding, ensuring consistent rendering across both browsers.
-3.
+3. Through this practice, I learned that Tailwind CSS is mobile-first by design. Initially, I focused on styling for larger screens first, which led to incorrect styles and significant time spent on adjustments.

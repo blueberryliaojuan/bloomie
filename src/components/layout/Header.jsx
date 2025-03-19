@@ -145,7 +145,7 @@ const Header = () => {
             Occasion
           </Link>
           <Link
-            to="/About"
+            to="/about"
             className="block text-white hover:text-gray-300"
             style={{ color: "var(--primary-color)" }}
           >
