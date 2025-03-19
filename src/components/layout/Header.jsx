@@ -33,7 +33,7 @@ const Header = () => {
         <div className="text-2xl font-bold">
           <Link to="/">
             <img
-              src="public/assets/images/logopink.svg"
+              src="/assets/images/logopink.svg"
               alt="Bloomie Logo"
               className="h-full"
               style={logoHeight}

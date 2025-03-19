@@ -7,7 +7,7 @@ import { heartOutline, cartOutline } from "ionicons/icons";
 const FlowerItem = ({
   name,
   description,
-  imageUrl,
+  image,
   price,
   tags,
   favorite,
@@ -22,7 +22,7 @@ const FlowerItem = ({
   // const handleAddToCart = () => {};
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-      <img className="w-full h-64 object-cover" src={imageUrl} alt={name} />
+      <img className="w-full h-64 object-cover" src={image} alt={name} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{name}</div>
         <p className="text-gray-700 text-base">{description}</p>

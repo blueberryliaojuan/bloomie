@@ -25,18 +25,33 @@ const home = () => {
             wherever you need a touch of floral magic.
           </h3>
           <div className="flex justify-start px-24 py-12">
-            <div className="flex justify-start bg-black text-white py-2 px-4 rounded-lg">
-              <img src="/assets/images/appleIcon.svg" alt="" />
-              <div className="ml-4">
-                <div className="text-sm">Download on the</div>
-                <div className="text-xl">App Store</div>
+            <div className="flex items-center bg-black text-white py-3 px-4 rounded-lg ml-8">
+              <img src="/assets/images/appleIcon.svg" alt="app store logo" />
+              <div className="ml-4 mr-2">
+                <div
+                  className="text-sm"
+                  style={{ lineHeight: "1.5", whiteSpace: "nowrap" }}
+                >
+                  Download on the
+                </div>
+                <div className="text-xl" style={{ lineHeight: "1.2" }}>
+                  App Store
+                </div>
               </div>
             </div>
-            <div className="flex justify-start bg-black text-white py-2 px-4 rounded-lg ml-4">
-              <img src="/assets/images/googleIcon.svg" alt="" />
+            <div className="flex items-center bg-black text-white py-3 px-4 rounded-lg ml-8">
+              <img
+                src="/assets/images/googleIcon.svg"
+                alt="google play store logo"
+                className="align-middle"
+              />
               <div className="ml-4">
-                <div className="text-sm">Get it on </div>
-                <div className="text-xl">Google Play</div>
+                <div className="text-sm" style={{ lineHeight: "1.5" }}>
+                  Get it on
+                </div>
+                <div className="text-xl" style={{ lineHeight: "1.2" }}>
+                  Google Play
+                </div>
               </div>
             </div>
           </div>

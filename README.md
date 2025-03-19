@@ -21,27 +21,32 @@ Bloomie Bloomie Bloomie is a flower store offering both in-store and online shop
 
 ### Dependencies:
 
+- Router:[react-router-dom](https://reactrouter.com/)
 - CSS: [tailwindcss](https://tailwindcss.com/)
-<!-- - classname: [classnames](https://www.npmjs.com/package/classnames) -->
 - Icons：[ionicons](https://ionic.io/ionicons)
-- JSON Server: [typicode/json-server](https://github.com/typicode/json-server)
+- Animation: [GSAP](https://gsap.com/)
+  <!-- - classname: [classnames](https://www.npmjs.com/package/classnames) -->
+  <!-- - JSON Server: [typicode/json-server](https://github.com/typicode/json-server) -->
+
+### Techniques:
+
+- 3D component [model-viewer](https://modelviewer.dev/)
+- IonIcons used as components, like <IonIcon icon={heartOutline} className="text-lg" />
+- use RouterProvider component in react-router-dom
+- 404 page, animationed with GSAP
+- useState, useEffect, useRef, useNavigate
 
 ### Installation Steps:
 
 1. Install project dependencies: npm i
-2. Set up the JSON Server:
-   npm db
-3. Start the development server: npm run dev
+<!-- 2. Set up the JSON Server:
+   npm db -->
+2. Start the development server: npm run dev
 
 ---
 
-## Challenges and what I Learned:
+## What I Learned:
 
-1. It took me some time to get used the tailwind, as I did not use it before. I tried to use customised css variables but failed to use className like "color-primary", then I used inline style instead
-   (eg. {
-   color: favorite ? "var(--primary-color)" : "var(--secondary-color)",
-   })
-2. I learned that the higher verion of react-router-dom uses RouterProvider, so I tried in this project
-3. learned about the way to use ionIcons in the react, I made some mistakes on how to import css, finally found that I can use them as components, like <IonIcon icon={heartOutline} className="text-lg" />
-4. the state management of react is very similar to Vue, so I got used to it quickly
-5. I tried to use JSON server to store my data, but run out of time, I will try in next assignment
+1. So far, I have built four pages for this project: Home, Shop, About, and 404. Through this process, I had the opportunity to deepen my understanding of key React hooks and concepts, including useState, useEffect, useRef, and useNavigate.
+2. The project was tested on both Chrome and Firefox, and I observed a discrepancy in how screen height was rendered between the two browsers. Specifically, while the Apple and Google buttons displayed correctly in Chrome, the last line of text was partially clipped in Firefox. This issue stemmed from differences in how line-height was calculated. To address this, I explicitly set the line-height and adjusted the padding, ensuring consistent rendering across both browsers.
+3.
