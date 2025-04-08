@@ -26,7 +26,7 @@ Bloomie Bloomie Bloomie is a flower store offering both in-store and online shop
 - Icons：[ionicons](https://ionic.io/ionicons)
 - Animation: [GSAP](https://gsap.com/)
   <!-- - classname: [classnames](https://www.npmjs.com/package/classnames) -->
-  <!-- - JSON Server: [typicode/json-server](https://github.com/typicode/json-server) -->
+  - JSON Server: [typicode/json-server](https://github.com/typicode/json-server)
 
 ### Techniques:
 
@@ -39,9 +39,9 @@ Bloomie Bloomie Bloomie is a flower store offering both in-store and online shop
 ### Installation Steps:
 
 1. Install project dependencies: npm i
-<!-- 2. Set up the JSON Server:
-   npm db -->
-2. Start the development server: npm run dev
+2. Set up the JSON Server:
+   npm db
+3. Start the development server: npm run dev
 
 ---
 
