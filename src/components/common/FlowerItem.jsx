@@ -1,10 +1,11 @@
 import React from "react";
-// import { useState } from "react";
 import Tag from "./Tag";
 import { IonIcon } from "@ionic/react";
 import { heartOutline, cartOutline } from "ionicons/icons";
+import { useNavigate } from "react-router-dom";
 
 const FlowerItem = ({
+  id,
   name,
   description,
   image,
@@ -13,16 +14,20 @@ const FlowerItem = ({
   favorite,
   onAddToFavorites,
 }) => {
-  // const [favorites, setFavorites] = useState([]); // Manage favorites
-  // const [cart, setCart] = useState([]); // Manage cart
+  const navigate = useNavigate();
+  // 跳转到详情页面的函数
+  const toDetail = () => {
+    navigate(`/detail/${id}`);
+  };
 
-  // Handle adding to favorites
-  // const onAddToFavorites = () => {};
-  // Handle adding to cart
-  // const handleAddToCart = () => {};
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-      <img className="w-full h-64 object-cover" src={image} alt={name} />
+      <img
+        className="w-full h-64 object-cover cursor-pointer"
+        src={image}
+        alt={name}
+        onClick={toDetail}
+      />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{name}</div>
         <p className="text-gray-700 text-base">{description}</p>
@@ -34,14 +39,13 @@ const FlowerItem = ({
         </p>
       </div>
       <div className="px-6 pt-4 pb-2">
-        {tags.map((tag, index) => (
-          <Tag key={index} name={tag} />
-        ))}
+        {Array.isArray(tags) &&
+          tags.map((tag, index) => <Tag key={index} name={tag} />)}
       </div>
       <div className="px-6 py-4 flex justify-between items-center">
         {/* Add to Cart Button */}
         <button
-          className=" text-white py-2 px-4 rounded-md hover:bg-blue-400 flex items-center cursor-pointer"
+          className=" text-white py-2 px-4 rounded-md  flex items-center cursor-pointer"
           style={{
             backgroundColor: "var(--primary-color)",
             color: "var(--secondary-color)",
@@ -57,9 +61,8 @@ const FlowerItem = ({
           style={{
             color: favorite ? "var(--primary-color)" : "var(--secondary-color)",
           }}
-          onClick={() => onAddToFavorites(name)}
+          onClick={() => onAddToFavorites(id)}
         >
-          {/* <ion-icon name="heart-outline" className="text-xl"></ion-icon> */}
           <IonIcon icon={heartOutline} className="text-xl" />
         </button>
       </div>

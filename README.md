@@ -25,7 +25,6 @@ Bloomie Bloomie Bloomie is a flower store offering both in-store and online shop
 - CSS: [tailwindcss](https://tailwindcss.com/)
 - Icons：[ionicons](https://ionic.io/ionicons)
 - Animation: [GSAP](https://gsap.com/)
-  <!-- - classname: [classnames](https://www.npmjs.com/package/classnames) -->
   - JSON Server: [typicode/json-server](https://github.com/typicode/json-server)
 
 ### Techniques:
@@ -40,13 +39,44 @@ Bloomie Bloomie Bloomie is a flower store offering both in-store and online shop
 
 1. Install project dependencies: npm i
 2. Set up the JSON Server:
-   npm db
+   npm run db
 3. Start the development server: npm run dev
 
 ---
 
-## What I Learned:
+## What I Made
 
-1. So far, I have built four pages for this project: Home, Shop, About, and 404. Through this process, I had the opportunity to deepen my understanding of key React hooks and concepts, including useState, useEffect, useRef, useLocation, and useNavigate.
-2. The project was tested on both Chrome and Firefox, and I observed a discrepancy in how screen height was rendered between the two browsers. Specifically, while the Apple and Google buttons displayed correctly in Chrome, the last line of text was partially clipped in Firefox. This issue stemmed from differences in how line-height was calculated. To address this, I explicitly set the line-height and adjusted the padding, ensuring consistent rendering across both browsers.
-3. Through this practice, I learned that Tailwind CSS is mobile-first by design. Initially, I focused on styling for larger screens first, which led to incorrect styles and significant time spent on adjustments.
+### Pages Built
+
+I have created six pages for this project:
+
+1. **Home**
+2. **About**
+3. **Shop**
+4. **Product Detail**
+5. **My Favorite**
+6. **404 Error**
+
+### API Integration
+
+- The API is powered by a local JSON Server.
+- API details are documented in the `API.md` file.
+- JSON data is stored in the `db.json` file.
+
+### Features Implemented
+
+1. **Shop Page**
+
+   - Retrieves a list of flowers from the server.
+   - Provides access to the detail page by clicking on a flower image, with the ID passed through parameters.
+   - Allows users to toggle the favorite status of a flower, updating the server accordingly.
+   - Accesses the My Favorite page via the icon in the bottom-right corner.
+
+2. **Detail Page**
+
+   - Fetches detailed flower information from the server using the flower ID.
+
+3. **My Favorite Page**
+
+   - Displays a list of all favorite flowers retrieved from the server.
+   - Allows users to remove items from the favorite list, with updates reflected on the server.

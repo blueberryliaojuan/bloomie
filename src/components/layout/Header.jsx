@@ -49,11 +49,11 @@ const Header = () => {
         <nav className="relative space-x-6 hidden lg:flex">
           {[
             { path: "/", label: "Home" },
-            { path: "/products", label: "Shop" },
-            { path: "/Seasonal", label: "Seasonal" },
-            { path: "/Occasion", label: "Occasion" },
+            { path: "/shop", label: "Shop" },
+            // { path: "/Seasonal", label: "Seasonal" },
+            // { path: "/Occasion", label: "Occasion" },
             { path: "/About", label: "About" },
-            { path: "/contact", label: "Contact" },
+            // { path: "/contact", label: "Contact" },
           ].map((link) => (
             <div key={link.path} className="relative group">
               <Link
@@ -123,11 +123,11 @@ const Header = () => {
         <nav className="space-y-4 px-4 py-2">
           {[
             { path: "/", label: "Home" },
-            { path: "/products", label: "Shop" },
-            { path: "/Seasonal", label: "Seasonal" },
-            { path: "/Occasion", label: "Occasion" },
+            { path: "/shop", label: "Shop" },
+            // { path: "/Seasonal", label: "Seasonal" },
+            // { path: "/Occasion", label: "Occasion" },
             { path: "/About", label: "About" },
-            { path: "/contact", label: "Contact" },
+            // { path: "/contact", label: "Contact" },
           ].map((link) => (
             <Link
               key={link.path}
