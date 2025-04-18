@@ -32,6 +32,7 @@ Bloomie Bloomie Bloomie is a flower store offering both in-store and online shop
 - 3D component [model-viewer](https://modelviewer.dev/)
 - IonIcons used as components, like <IonIcon icon={heartOutline} className="text-lg" />
 - use RouterProvider component in react-router-dom
+- JSON Server
 - 404 page, animationed with GSAP
 - useState, useEffect, useRef, useNavigate
 
